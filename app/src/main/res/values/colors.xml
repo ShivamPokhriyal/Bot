@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="conversation_background">#eee</color>
+    <color name="send_message_background">#330000ff</color>
+    <color name="send_message_border">#550000ff</color>
+    <color name="receive_message_background">#fff</color>
+    <color name="receive_message_border">#eee</color>
+</resources>
