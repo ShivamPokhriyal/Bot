@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import com.example.dimagibot.R;
 import com.example.dimagibot.adapters.ConversationAdapter;
 import com.example.dimagibot.models.Message;
-import com.example.dimagibot.utils.BotService;
 import com.example.dimagibot.utils.VerticalSpaceItemDecoration;
 import com.example.dimagibot.views.ChatBox;
 
@@ -43,9 +42,6 @@ public class ConversationActivity extends AppCompatActivity implements ChatBox.C
     @Override
     public void onSendButtonClicked(String text) {
         sendMessage(text, Message.MessageType.SENT);
-        String response = BotService.getInstance(getApplicationContext()).botAction(text, getApplicationContext());
-        sendMessage(response, Message.MessageType.RECEIVED);
-
     }
 
     public void sendMessage(String text, Message.MessageType type) {
